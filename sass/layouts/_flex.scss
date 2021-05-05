@@ -1,0 +1,64 @@
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.flex__element {
+  flex-basis: calc((100% - 30px * 9) / 9);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.flex__three {
+  flex-basis: calc((100% - 30px * 3) / 3);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.flex__four {
+  flex-basis: calc((100% - 30px * 4) / 4);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.flex__element .flex-projects {
+  padding: 20px 24px;
+  border-right: 1px solid var(--card-border-color);
+  border-left: 1px solid var(--card-border-color);
+  border-bottom: 1px solid var(--card-border-color);
+}
+
+.flex__list-text {
+  font-weight: 400;
+}
+
+.flex__icons-item::before {
+  content: "";
+  display: block;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--bg-color);
+  background-repeat: no-repeat;
+  background-size: 70px 70px;
+  border-radius: 4px;
+  background-position: center;
+}
+.antena::before {
+  content: "";
+  background-image: url(../images/antenna.svg);
+}
+
+.clock::before {
+  content: "";
+  background-image: url(../images/clock.svg);
+}
+
+.diagram::before {
+  content: "";
+  background-image: url(../images/diagram.svg);
+}
+.astronavt::before {
+  content: "";
+  background-image: url(../images/astronaut.svg);
+}

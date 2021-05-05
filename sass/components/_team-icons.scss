@@ -1,0 +1,22 @@
+.team-icons {
+  display: inline-flex;
+  margin-top: 16px;
+}
+
+.team-icons .icon {
+  fill: var(--color-icon);
+}
+
+.team-icons__margin + .team-icons__margin {
+  margin-left: 10px;
+}
+
+.team-icons__link:hover .icon,
+.team-icons__link:focus .icon {
+  fill: var(--bg-portfo);
+}
+
+.team-icons__link:hover,
+.team-icons__link:focus {
+  background-color: var(--accent-color);
+}

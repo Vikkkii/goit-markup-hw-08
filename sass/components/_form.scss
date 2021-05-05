@@ -1,0 +1,114 @@
+.form__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__field {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.form__field:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.form__text {
+  margin-bottom: 4px;
+  margin-left: 41px;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.167;
+  letter-spacing: 0.01em;
+
+  color: var(--main-text-color);
+}
+
+.form__about-input {
+  width: 448px;
+  height: 40px;
+  margin-left: 41px;
+  margin-right: 39px;
+
+  cursor: pointer;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  background-color: var(--bg-portfo);
+
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    border: 1px solid var(--accent-color);
+    outline-color: var(--accent-color);
+  }
+}
+
+.form__about-input:hover ~ .form__icon-form,
+.form__about-input:focus ~ .form__icon-form {
+  fill: var(--accent-color);
+}
+
+.form__comment {
+  padding: 12px 16px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
+  width: 448px;
+  height: 120px;
+  margin-left: 41px;
+  margin-right: 39px;
+
+  resize: none;
+  cursor: pointer;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  background-color: var(--bg-portfo);
+
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form__title {
+  margin-top: 40px;
+  margin-bottom: 12px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+
+  color: var(--title-color);
+}
+
+.form__buttom {
+  position: absolute;
+
+  bottom: 40px;
+  left: 165px;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form__buttom:hover,
+.form__buttom:focus {
+  background-color: #188ce8;
+}
+
+.form__icon-form {
+  position: absolute;
+  top: 50%;
+  left: 56px;
+  transform: translateY(-50%);
+  display: inline-block;
+}

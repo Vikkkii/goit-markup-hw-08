@@ -1,0 +1,38 @@
+.footer-icons__fotter-icon-blok {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-icons__fotter-icon-blok:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-icons__icon {
+  fill: var(--bg-portfo);
+}
+
+.footer-icons__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+
+.footer-icons__link:hover .icon,
+.footer-icons__link:focus .icon {
+  fill: var(--bg-portfo);
+}

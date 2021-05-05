@@ -1,0 +1,15 @@
+.our-clients {
+  display: flex;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: var(--bg-portfo);
+}
+
+.our-clients__clients-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.167;
+  text-align: center;
+  margin-bottom: 50px;
+  color: var(--title-color);
+}
