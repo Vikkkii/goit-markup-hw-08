@@ -5,6 +5,14 @@
   line-height: 1.71;
 }
 
+.contacts {
+  margin-top: 9px;
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 60px;
+  }
+}
+
 .contacts__contacts-color {
   color: var(--contacts-color);
 }

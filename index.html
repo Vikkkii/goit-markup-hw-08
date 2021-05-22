@@ -27,30 +27,65 @@
         </li>
         </ul>
         </nav>
-        <ul class="list main">
-        <li class="main__item"><a href="mailto:info@devstudio.com" class="main__link main__padding-nav link">
+        <ul class="list main main-contacts">
+        <li class="main__item main-contacts__item"><a href="mailto:info@devstudio.com" class="main__link main__padding-nav-contacts link">
             <svg class="icon main__icon" width="16px"  height="12px">
                 <use href="./images/sprite.svg#icon-envelope"></use>
             </svg>info@devstudio.com</a>
     </li>
-        <li class="main__item"><a href="tel+380961111111" class="main__link main__padding-nav link">
+        <li class="main__item main-contacts__item"><a href="tel+380961111111" class="main__link main__padding-nav-contacts link">
             <svg class="icon main__icon"  width="10px"  height="16px">
             <use href="./images/sprite.svg#icon-smartphone"></use>
         </svg>+38 096 111 11 11</a>
     </li>
         </ul>
+        <button class="mobile-menu-btn" data-menu-button>
+            <svg class="mobile-menu-icon">
+                <use class="icon-menu" href="./images/sprite.svg#icon-menu"></use>
+                <use class="icon-close" href="./images/sprite.svg#icon-close"></use>
+            </svg>
+        </button>
         </div>
       </header>
-    <main>
+      <div class="mobile-menu mobile-position" data-menu>
+    <ul class="mobile-navigation list">
+        <li class="mobile-navigation__item"> <a href="" class="link name current blue">Студия</a>
+        </li>
+        <li class="mobile-navigation__item"> <a href="./portfolio.html" class="link name">Портфолио</a>
+        </li>
+        <li class="mobile-navigation__item"> <a href="" class="link name">Контакты</a>
+        </li>
+    </ul>
+<div>
+    <ul class="list mobile-navigation">
+        <li class=" mobile-navigation__tel">
+            <a href="tel+380961111111" class="link blue">
+                +38 096 111 11 11</a>
+        </li>
+        <li class="mobile-navigation__mail">
+            <a href="mailto:info@devstudio.com" class="link">
+                info@devstudio.com</a>
+        </li>
+    </ul>
+    
+    <ul class="mobile-social">
+        <li class="mobile-social__item list"><a class="link" href="">Instagram</a></li>
+        <li class="mobile-social__item list"><a class="link" href="">Twitter</a></li>
+        <li class="mobile-social__item list"><a class="link" href="">Facebook</a></li>
+        <li class="mobile-social__item list"><a class="link" href="">LinkedIn</a></li>
+    </ul>
+    </div>
+    </div>
+      <main>
     <section class="hero dark-bg">
      <div class="container hero__text">
             <h1 class="hero__title">Эффективные решения <br> для вашего бизнеса</h1>
         <button class="hero__button-first button" type="button" data-modal-open>Заказать услугу</button>
      </div>
             </section>
-        <section class="section-size list">
+        <section class="list">
             <div class="container">
-        <ul class="flex list">
+        <ul class="flex section-padding list">
             <li class="flex__four flex__icons-item flex__list-text antena">
             <h3 class="title-label">Внимание к деталям</h3>
             <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
@@ -68,9 +103,11 @@
             <p> Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
         </li>
         </ul> 
+        
         </div>
+        
         </section>
-        <section class="section-padding list">
+         <section class="section-works section-padding list">
       <div class="container">
        <h3 class="section-padding__section-title">Чем мы занимаемся</h3>
             <ul class="flex list">
@@ -106,8 +143,16 @@
             <h3 class="section-padding__section-title">Наша команда</h3>
         <ul class="list title-team flex">
             <li class="flex__four shadow">
-                <img src="./images/team/img-1.jpg" width="270" height="260" alt="Дизайнер продуктов Игорь Демьяненко">
-                <div class="team-card">
+                <picture>
+                    <source srcset="./images/team/desktop/img1_desktop.jpg 1x, ./images/team/desktop/img1@2x_desktop.jpg 2x"
+                        media="(min-width: 1200px)">
+                    <source srcset="./images/team/tablet/img1_tablet.jpg 1x, ./images/team/tablet/img1@2x_tablet.jpg 2x"
+                        media="(min-width: 768px)">
+                    <source srcset="./images/team/mobile/img1_mobile.jpg 1x, ./images/team/mobile/img1@2x_mobile.jpg 2x"
+                        media="(max-width: 767px)">
+                        <img src="./images/team/desktop/img1_desktop.jpg" alt="Дизайнер продуктов Игорь Демьяненко" width="450">
+                        </picture>
+                                <div class="team-card">
                     <h3 class="title-team name">Игорь Демьяненко</h3>
                 <p lang="en">Product Designer</p>
                 <ul class="list team-icons">
@@ -143,8 +188,16 @@
                 </div>
             </li>
             <li class="flex__four shadow">
-                <img src="./images/team/img-2.jpg" width="270" height="260" alt="Фронтенд-разработчик Ольга Репина">
-                <div class="team-card">
+                <picture>
+                    <source srcset="./images/team/desktop/img2_desktop.jpg 1x, ./images/team/desktop/img2@2x_desktop.jpg 2x"
+                        media="(min-width: 1200px)">
+                    <source srcset="./images/team/tablet/img2_tablet.jpg 1x, ./images/team/tablet/img2@2x_tablet.jpg 2x"
+                        media="(min-width: 768px)">
+                    <source srcset="./images/team/mobile/img2_mobile.jpg 1x, ./images/team/mobile/img2@2x_mobile.jpg 2x"
+                        media="(max-width: 767px)">
+                    <img src="./images/team/desktop/img2_desktop.jpg" alt="Фронтенд-разработчик Ольга Репина" width="450">
+                </picture>
+                        <div class="team-card">
                     <h3 class="title-team name">Ольга Репина</h3>
                 <p lang="en">Frontend Developer</p>
             <ul class="list team-icons">
@@ -180,8 +233,16 @@
             </div>
             </li>
             <li class="flex__four shadow">
-                <img src="./images/team/img-3.jpg" width="270" height="260" alt="Маркетолог Николай Тарасов">
-                <div class="team-card">
+                <picture>
+                    <source srcset="./images/team/desktop/img3_desktop.jpg 1x, ./images/team/desktop/img3@2x_desktop.jpg 2x"
+                        media="(min-width: 1200px)">
+                    <source srcset="./images/team/tablet/img3_tablet.jpg 1x, ./images/team/tablet/img3@2x_tablet.jpg 2x"
+                        media="(min-width: 768px)">
+                    <source srcset="./images/team/mobile/img3_mobile.jpg 1x, ./images/team/mobile/img3@2x_mobile.jpg 2x"
+                        media="(max-width: 767px)">
+                    <img src="./images/team/desktop/img3_desktop.jpg" alt="Маркетолог Николай Тарасов" width="450">
+                </picture>
+                        <div class="team-card">
                     <h3 class="title-team name">Николай Тарасов</h3>
                 <p lang="en">Marketing</p>
             <ul class="list team-icons">
@@ -217,8 +278,16 @@
             </div>
         </li>
             <li class="flex__four shadow">
-                <img src="./images/team/img-4.jpg" width="270" height="260" alt="UI Дизайнер Михаил Ермаков">
-                <div class="team-card">
+                <picture>
+                    <source srcset="./images/team/desktop/img4_desktop.jpg 1x, ./images/team/desktop/img4@2x_desktop.jpg 2x"
+                        media="(min-width: 1200px)">
+                    <source srcset="./images/team/tablet/img4_tablet.jpg 1x, ./images/team/tablet/img4@2x_tablet.jpg 2x"
+                        media="(min-width: 768px)">
+                    <source srcset="./images/team/mobile/img4_mobile.jpg 1x, ./images/team/mobile/img4@2x_mobile.jpg 2x"
+                        media="(max-width: 767px)">
+                    <img src="./images/team/desktop/img4_desktop.jpg" alt="Дизайнер Михаил Ермаков" width="450">
+                </picture>
+                    <div class="team-card">
                     <h3 class="title-team name">Михаил Ермаков</h3>
                 <p lang="en">UI Designer</p>
             <ul class="list team-icons">
@@ -264,7 +333,8 @@
                     <li class="clients__item">
                         <a href="" class="clients__card" target="_blank" rel="noopener noreferrer">
                         <svg class="clients__icon icon" width="44" height="49">
-                                <use href="./images/sprite.svg#icon-logo-first"></use>
+                                <use href="./images/sprite.svg#icon-logo-first">
+                                </use>
                             </svg>
                         </a>
                     </li>
@@ -310,9 +380,10 @@
          </main>
     <footer class="dark-bg footer">
         <div class="container footer-flex">
+            <div class="contact-us">
         <div class="footer-flex__footer-contacts">
             <a class="link footer-logo" lang="en" href=""><span class="blue">Web</span>Studio</a>
-            <address>
+            <address class="address">
                 <div class="address-margin">
                 <ul class="list contacts">
                     <li class="footer-flex__margin-footer">
@@ -321,20 +392,21 @@
                             Леси Украинки, 26</a>
                         </li>
                     <li class="footer-flex__margin-footer"> 
-                        <a class="link contacts__contacts-color" href="mailto:info@devstudio.com">info@example.com
+                        <a class="link contacts__contacts-color" href="mailto:info@devstudio.com">
+                            info@example.com
 
                         </a>
                     </li>
                     <li class="footer-flex__margin-footer"> 
-                        <a class="link contacts__contacts-color" href="tel+380961111111">+38 096 111 11 11
-
+                        <a class="link contacts__contacts-color" href="tel+380961111111">
+                            +38 096 111 11 11
                         </a>
                     </li>
                 </ul>
-</div>
+                  </div>
             </address>
-            
-                </div>
+            </div>
+                
 <div class="footer-flex__footer-contacts">
     <h3 class="footer-title"> Присоединяйтесь </h3>
     <ul class="list footer-icons">
@@ -368,6 +440,7 @@
         </li>
     </ul>
         </div>  
+        </div>
         <div class="form-blok">
             <h3 class="form-blok__footer-title footer-title"> Подпишитесь на рассылку </h3>
             <form class="form-footer">
@@ -394,9 +467,9 @@
             </svg>
         </button>
         
-        <form>
+        <form class="modal-form form__form">
             <p class="form__title">Оставьте свои данные, мы вам перезвоним</p>
-            <div class="form__form">
+        
          <label class="form__text">Имя</label>
             <div class="form__field">
                 <input type="text" class="form__about-input"
@@ -437,10 +510,10 @@
         </label>
         </div>
         <button class="button form__buttom" type="submit">Отправить</button>  
-    </div>
      </form>
         </div>
     </div>
+    <script src="./js/menu.js"></script>
      <script src="./js/modal.js"></script>
 </body>
 </html>

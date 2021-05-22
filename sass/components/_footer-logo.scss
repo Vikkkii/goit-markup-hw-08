@@ -1,4 +1,6 @@
 .footer-logo {
+  display: block;
+  margin-bottom: 20px;
   font-family: var(--logo-font);
   font-size: 26px;
   line-height: 1.19;
@@ -7,4 +9,8 @@
   padding-top: 0;
   padding-bottom: 0;
   margin-right: 0;
+
+  @media screen and (max-width: 1199.98px) {
+    text-align: center;
+  }
 }

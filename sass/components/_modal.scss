@@ -23,8 +23,19 @@
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
 
-  min-width: 528px;
-  min-height: 581px;
+  max-width: 528px;
+  height: 581px;
+
+  margin-bottom: 4px;
+
+  padding: 40px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.167;
+  letter-spacing: 0.01em;
+  text-align: start;
+
+  color: var(--main-text-color);
 
   background-color: var(--bg-portfo);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -33,10 +44,19 @@
 
   transition-duration: 700ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (max-width: 1199.98px) {
+    width: 89vw;
+    height: 609px;
+  }
 }
 
 .is-hidden .modal {
   transform: translate(-50%, -50%) scale(0);
+}
+
+.modal-form {
+  max-width: 100%;
 }
 
 .btn-close {

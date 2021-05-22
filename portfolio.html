@@ -31,24 +31,57 @@
                     </li>
                 </ul>
             </nav>
-            <ul class="list main">
-                <li class="main__item">
-                    <a href="mailto:info@devstudio.com" class="main__link main__padding-nav link">
+            <ul class="list main main-contacts">
+                <li class="main__item main-contacts__item"><a href="mailto:info@devstudio.com"
+                        class="main__link main__padding-nav-contacts link">
                         <svg class="icon main__icon" width="16px" height="12px">
                             <use href="./images/sprite.svg#icon-envelope"></use>
-                        </svg>info@devstudio.com
-                    </a>
-                    </li>
-                <li class="main__item">
-                    <a href="tel+380961111111" class="main__link main__padding-nav link">
+                        </svg>info@devstudio.com</a>
+                </li>
+                <li class="main__item main-contacts__item"><a href="tel+380961111111"
+                        class="main__link main__padding-nav-contacts link">
                         <svg class="icon main__icon" width="10px" height="16px">
                             <use href="./images/sprite.svg#icon-smartphone"></use>
-                        </svg>+38 096 111 11 11
-                    </a>
-                    </li>
+                        </svg>+38 096 111 11 11</a>
+                </li>
             </ul>
+            <button class="mobile-menu-btn" data-menu-button>
+                <svg class="mobile-menu-icon">
+                    <use class="icon-menu" href="./images/sprite.svg#icon-menu"></use>
+                    <use class="icon-close" href="./images/sprite.svg#icon-close"></use>
+                </svg>
+            </button>
             </div>
             </header>
+            <div class="mobile-menu mobile-position" data-menu>
+                <ul class="mobile-navigation list">
+                    <li class="mobile-navigation__item"> <a href="" class="link name current">Студия</a>
+                    </li>
+                    <li class="mobile-navigation__item"> <a href="./portfolio.html" class="link name blue">Портфолио</a>
+                    </li>
+                    <li class="mobile-navigation__item"> <a href="" class="link name">Контакты</a>
+                    </li>
+                </ul>
+                <div>
+                    <ul class="list mobile-navigation">
+                        <li class=" mobile-navigation__tel">
+                            <a href="tel+380961111111" class="link blue">
+                                +38 096 111 11 11</a>
+                        </li>
+                        <li class="mobile-navigation__mail">
+                            <a href="mailto:info@devstudio.com" class="link">
+                                info@devstudio.com</a>
+                        </li>
+                    </ul>
+            
+                    <ul class="mobile-social">
+                        <li class="mobile-social__item list"><a class="link" href="">Instagram</a></li>
+                        <li class="mobile-social__item list"><a class="link" href="">Twitter</a></li>
+                        <li class="mobile-social__item list"><a class="link" href="">Facebook</a></li>
+                        <li class="mobile-social__item list"><a class="link" href="">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
        <main>
         <h1 class="hide-title">Фильтры</h1>
     <section class="section-padding bg-color-studio-portfolio">
@@ -64,13 +97,21 @@
             <li class="flex-portfolio__shadow flex__element">
                 <a href="" class="flex-portfolio__link">                
             <div class="thumb">
+                <picture>
+                    <source srcset="./images/foto-portfolio/desktop/img1_desktop.jpg 1x, ./images/foto-portfolio/desktop/img1@2x_desktop.jpg 2x"
+                        media="(min-width: 1200px)">
+                    <source srcset="./images/foto-portfolio/tablet/img1_tablet.jpg 1x, ./images/foto-portfolio/tablet/img1@2x_tablet.jpg 2x"
+                        media="(min-width: 768px)">
+                    <source srcset="./images/foto-portfolio/mobile/img1_mobile.jpg 1x, ./images/foto-portfolio/mobile/img1@2x_mobile.jpg 2x"
+                        media="(max-width: 767px)">
+                    <img src="./images/foto-portfolio/desktop/img1_desktop.jpg" alt="Веб-сайт Технокряк" width="450">
+                </picture>
                 <div class="thumb__cards">
                     <p class="thumb__text">Технокряк это современная площадка распространения коронавируса.
                         Компании используют эту платформу для цифрового
                         шпионажа и атак на защищённые сервера конкурентов.</p>
                 </div>
-                <img src="./images/foto-portfolio/img-0.jpg" width="370" height="294" alt="Веб-сайт Технокряк">
-            </div>
+                      </div>
                <div class="flex-projects">
             <h2 class="title-label flex-projects__title">Технокряк</h2>
            <p class="flex-projects__placement">Веб-сайт</p>
@@ -80,12 +121,24 @@
         <li class="flex-portfolio__shadow flex__element">
             <a href="" class="flex-portfolio__link">
                 <div class="thumb">
+                    <picture>
+                        <source
+                            srcset="./images/foto-portfolio/desktop/img2_desktop.jpg 1x, ./images/foto-portfolio/desktop/img2@2x_desktop.jpg 2x"
+                            media="(min-width: 1200px)">
+                        <source
+                            srcset="./images/foto-portfolio/tablet/img2_tablet.jpg 1x, ./images/foto-portfolio/tablet/img2@2x_tablet.jpg 2x"
+                            media="(min-width: 768px)">
+                        <source
+                            srcset="./images/foto-portfolio/mobile/img2_mobile.jpg 1x, ./images/foto-portfolio/mobile/img2@2x_mobile.jpg 2x"
+                            media="(max-width: 767px)">
+                        <img src="./images/foto-portfolio/desktop/img2_desktop.jpg" alt="Постер" width="450">
+                    </picture>
                     <div class="thumb__cards">
                         <p class="thumb__text">Технокряк это современная площадка распространения коронавируса.
                             Компании используют эту платформу для цифрового
                             шпионажа и атак на защищённые сервера конкурентов.</p>
                     </div>
-            <img src="./images/foto-portfolio/img-1.jpg" width="370" height="294" alt="Постер">
+            <!-- <img src="./images/foto-portfolio/img-1.jpg" width="370" height="294" alt="Постер"> -->
              </div>
         <div class="flex-projects">
                 <h2 class="title-label flex-projects__title">Постер<span lang="en">New Orlean vs Golden Star</span></h2>
@@ -96,12 +149,24 @@
             <li class="flex-portfolio__shadow flex__element">
                 <a href="" class="flex-portfolio__link">
                     <div class="thumb">
+                        <picture>
+                            <source
+                                srcset="./images/foto-portfolio/desktop/img3_desktop.jpg 1x, ./images/foto-portfolio/desktop/img3@2x_desktop.jpg 2x"
+                                media="(min-width: 1200px)">
+                            <source
+                                srcset="./images/foto-portfolio/tablet/img3_tablet.jpg 1x, ./images/foto-portfolio/tablet/img3@2x_tablet.jpg 2x"
+                                media="(min-width: 768px)">
+                            <source
+                                srcset="./images/foto-portfolio/mobile/img3_mobile.jpg 1x, ./images/foto-portfolio/mobile/img3@2x_mobile.jpg 2x"
+                                media="(max-width: 767px)">
+                            <img src="./images/foto-portfolio/desktop/img3_desktop.jpg" alt="Ресторан" width="450">
+                        </picture>
                         <div class="thumb__cards">
                             <p class="thumb__text">Технокряк это современная площадка распространения коронавируса.
                                 Компании используют эту платформу для цифрового
                                 шпионажа и атак на защищённые сервера конкурентов.</p>
                         </div>
-            <img src="./images/foto-portfolio/img-2.jpg" width="370" height="294" alt="Ресторан">
+            <!-- <img src="./images/foto-portfolio/img-2.jpg" width="370" height="294" alt="Ресторан"> -->
         </div>
             <div class="flex-projects">
                 <h2 class="title-label flex-projects__title">Ресторан <span lang="en">Seafood</span></h2>
@@ -112,12 +177,24 @@
              <li class="flex-portfolio__shadow flex__element">
                  <a href="" class="flex-portfolio__link">
                     <div class="thumb">
+                        <picture>
+                            <source
+                                srcset="./images/foto-portfolio/desktop/img4_desktop.jpg 1x, ./images/foto-portfolio/desktop/img4@2x_desktop.jpg 2x"
+                                media="(min-width: 1200px)">
+                            <source
+                                srcset="./images/foto-portfolio/tablet/img4_tablet.jpg 1x, ./images/foto-portfolio/tablet/img4@2x_tablet.jpg 2x"
+                                media="(min-width: 768px)">
+                            <source
+                                srcset="./images/foto-portfolio/mobile/img4_mobile.jpg 1x, ./images/foto-portfolio/mobile/img4@2x_mobile.jpg 2x"
+                                media="(max-width: 767px)">
+                            <img src="./images/foto-portfolio/desktop/img4_desktop.jpg" alt="Наушники" width="450">
+                        </picture>
                         <div class="thumb__cards">
                             <p class="thumb__text">Технокряк это современная площадка распространения коронавируса.
                                 Компании используют эту платформу для цифрового
                                 шпионажа и атак на защищённые сервера конкурентов.</p>
                         </div>
-                <img src="./images/foto-portfolio/img-3.jpg" width="370" height="294" alt="Наушники">
+                <!-- <img src="./images/foto-portfolio/img-3.jpg" width="370" height="294" alt="Наушники"> -->
         </div>
                 <div class="flex-projects">
                 <h2 class="title-label flex-projects__title">Проект <span lang="en">Prime</span></h2>
@@ -128,12 +205,24 @@
             <li class="flex-portfolio__shadow flex__element">
                 <a href="" class="flex-portfolio__link">
                     <div class="thumb">
+                        <picture>
+                            <source
+                                srcset="./images/foto-portfolio/desktop/img5_desktop.jpg 1x, ./images/foto-portfolio/desktop/img5@2x_desktop.jpg 2x"
+                                media="(min-width: 1200px)">
+                            <source
+                                srcset="./images/foto-portfolio/tablet/img5_tablet.jpg 1x, ./images/foto-portfolio/tablet/img5@2x_tablet.jpg 2x"
+                                media="(min-width: 768px)">
+                            <source
+                                srcset="./images/foto-portfolio/mobile/img5_mobile.jpg 1x, ./images/foto-portfolio/mobile/img5@2x_mobile.jpg 2x"
+                                media="(max-width: 767px)">
+                            <img src="./images/foto-portfolio/desktop/img5_desktop.jpg" alt="Коробки" width="450">
+                        </picture>
                         <div class="thumb__cards">
                             <p class="thumb__text">Технокряк это современная площадка распространения коронавируса.
                                 Компании используют эту платформу для цифрового
                                 шпионажа и атак на защищённые сервера конкурентов.</p>
                         </div>
-            <img src="./images/foto-portfolio/img-4.jpg" width="370" height="294" alt="Коробки">
+            <!-- <img src="./images/foto-portfolio/img-4.jpg" width="370" height="294" alt="Коробки"> -->
         </div>
             <div class="flex-projects">
                 <h2 class="title-label flex-projects__title">Проект <span lang="en">Boxes</span></h2>
@@ -144,12 +233,24 @@
             <li class="flex-portfolio__shadow flex__element">
                 <a href="" class="flex-portfolio__link">
                     <div class="thumb">
+                        <picture>
+                            <source
+                                srcset="./images/foto-portfolio/desktop/img6_desktop.jpg 1x, ./images/foto-portfolio/desktop/img6@2x_desktop.jpg 2x"
+                                media="(min-width: 1200px)">
+                            <source
+                                srcset="./images/foto-portfolio/tablet/img6_tablet.jpg 1x, ./images/foto-portfolio/tablet/img6@2x_tablet.jpg 2x"
+                                media="(min-width: 768px)">
+                            <source
+                                srcset="./images/foto-portfolio/mobile/img6_mobile.jpg 1x, ./images/foto-portfolio/mobile/img6@2x_mobile.jpg 2x"
+                                media="(max-width: 767px)">
+                            <img src="./images/foto-portfolio/desktop/img6_desktop.jpg" alt="Дисплей" width="450">
+                        </picture>
                         <div class="thumb__cards">
                             <p class="thumb__text">Технокряк это современная площадка распространения коронавируса.
                                 Компании используют эту платформу для цифрового
                                 шпионажа и атак на защищённые сервера конкурентов.</p>
                         </div>
-            <img src="./images/foto-portfolio/img-5.jpg" width="370" height="294" alt="Дисплей">
+            <!-- <img src="./images/foto-portfolio/img-5.jpg" width="370" height="294" alt="Дисплей"> -->
         </div>
             <div class="flex-projects">
             <h2 class="title-label flex-projects__title"><span lang="en">Inspiration has no Borders</span></h2>
@@ -160,12 +261,24 @@
             <li class="flex-portfolio__shadow flex__element">
                 <a href="" class="flex-portfolio__link">
                     <div class="thumb">
+                        <picture>
+                            <source
+                                srcset="./images/foto-portfolio/desktop/img7_desktop.jpg 1x, ./images/foto-portfolio/desktop/img7@2x_desktop.jpg 2x"
+                                media="(min-width: 1200px)">
+                            <source
+                                srcset="./images/foto-portfolio/tablet/img7_tablet.jpg 1x, ./images/foto-portfolio/tablet/img7@2x_tablet.jpg 2x"
+                                media="(min-width: 768px)">
+                            <source
+                                srcset="./images/foto-portfolio/mobile/img7_mobile.jpg 1x, ./images/foto-portfolio/mobile/img7@2x_mobile.jpg 2x"
+                                media="(max-width: 767px)">
+                            <img src="./images/foto-portfolio/desktop/img7_desktop.jpg" alt="Издание" width="450">
+                        </picture>
                         <div class="thumb__cards">
                             <p class="thumb__text">Технокряк это современная площадка распространения коронавируса.
                                 Компании используют эту платформу для цифрового
                                 шпионажа и атак на защищённые сервера конкурентов.</p>
                         </div>
-            <img src="./images/foto-portfolio/img-6.jpg" width="370" height="294" alt="Издание">
+            <!-- <img src="./images/foto-portfolio/img-6.jpg" width="370" height="294" alt="Издание"> -->
         </div>
             <div class="flex-projects">
                 <h2 class="title-label flex-projects__title">Издание<span lang="en">Limited Edition</span></h2>
@@ -176,12 +289,24 @@
            <li class="flex-portfolio__shadow flex__element">
                <a href="" class="flex-portfolio__link">
                 <div class="thumb">
+                    <picture>
+                        <source
+                            srcset="./images/foto-portfolio/desktop/img8_desktop.jpg 1x, ./images/foto-portfolio/desktop/img8@2x_desktop.jpg 2x"
+                            media="(min-width: 1200px)">
+                        <source
+                            srcset="./images/foto-portfolio/tablet/img8_tablet.jpg 1x, ./images/foto-portfolio/tablet/img8@2x_tablet.jpg 2x"
+                            media="(min-width: 768px)">
+                        <source
+                            srcset="./images/foto-portfolio/mobile/img8_mobile.jpg 1x, ./images/foto-portfolio/mobile/img8@2x_mobile.jpg 2x"
+                            media="(max-width: 767px)">
+                        <img src="./images/foto-portfolio/desktop/img8_desktop.jpg" alt="Ярлык" width="450">
+                    </picture>
                     <div class="thumb__cards">
                         <p class="thumb__text">Технокряк это современная площадка распространения коронавируса.
                             Компании используют эту платформу для цифрового
                             шпионажа и атак на защищённые сервера конкурентов.</p>
                     </div>
-            <img src="./images/foto-portfolio/img-7.jpg" width="370" height="294" alt="Ярлык">
+            <!-- <img src="./images/foto-portfolio/img-7.jpg" width="370" height="294" alt="Ярлык"> -->
         </div>
             <div class="flex-projects">
             <h2 class="title-label flex-projects__title">Проект<span lang="en">Lab</span></h2>
@@ -192,12 +317,24 @@
              <li class="flex-portfolio__shadow flex__element">
                  <a href="" class="flex-portfolio__link">
                     <div class="thumb">
+                        <picture>
+                            <source
+                                srcset="./images/foto-portfolio/desktop/img9_desktop.jpg 1x, ./images/foto-portfolio/desktop/img9@2x_desktop.jpg 2x"
+                                media="(min-width: 1200px)">
+                            <source
+                                srcset="./images/foto-portfolio/tablet/img9_tablet.jpg 1x, ./images/foto-portfolio/tablet/img9@2x_tablet.jpg 2x"
+                                media="(min-width: 768px)">
+                            <source
+                                srcset="./images/foto-portfolio/mobile/img9_mobile.jpg 1x, ./images/foto-portfolio/mobile/img9@2x_mobile.jpg 2x"
+                                media="(max-width: 767px)">
+                            <img src="./images/foto-portfolio/desktop/img9_desktop.jpg" alt="Ярлык" width="450">
+                        </picture>
                         <div class="thumb__cards">
                             <p class="thumb__text">Технокряк это современная площадка распространения коронавируса.
                                 Компании используют эту платформу для цифрового
                                 шпионажа и атак на защищённые сервера конкурентов.</p>
                         </div>
-             <img src="./images/foto-portfolio/img-8.jpg" width="370" height="294" alt="Ярлык">
+             <!-- <img src="./images/foto-portfolio/img-8.jpg" width="370" height="294" alt="Ярлык"> -->
         </div>
              <div class="flex-projects">
                 <h2 class="title-label flex-projects__title"><span lang="en">Growing Business</span></h2>
@@ -211,64 +348,68 @@
 </main>
 <footer class="dark-bg footer">
     <div class="container footer-flex">
-        <div class="footer-flex__footer-contacts">
-            <a class="link footer-logo" lang="en" href=""><span class="blue">Web</span>Studio</a>
-            <address>
-                <div class="address-margin">
-                <ul class="list contacts">
-                    <li class="footer-flex__margin-footer">
-                        <a class="link contacts__address" href="https://goo.gl/maps/tQLRVX5ij8GDNnWr7" target="_blank"
-                            rel="noopener noreferrer">
-                            г. Киев, пр-т
-                            Леси Украинки, 26</a>
-                    </li>
-                    <li class="footer-flex__margin-footer">
-                        <a class="link contacts__contacts-color" href="mailto:info@devstudio.com">info@example.com
+        <div class="contact-us">
+            <div class="footer-flex__footer-contacts">
+                <a class="link footer-logo" lang="en" href=""><span class="blue">Web</span>Studio</a>
+                <address class="address">
+                    <div class="address-margin">
+                        <ul class="list contacts">
+                            <li class="footer-flex__margin-footer">
+                                <a class="link contacts__address" href="https://goo.gl/maps/tQLRVX5ij8GDNnWr7"
+                                    target="_blank" rel="noopener noreferrer">
+                                    г. Киев, пр-т
+                                    Леси Украинки, 26</a>
+                            </li>
+                            <li class="footer-flex__margin-footer">
+                                <a class="link contacts__contacts-color" href="mailto:info@devstudio.com">
+                                    info@example.com
+
+                                </a>
+                            </li>
+                            <li class="footer-flex__margin-footer">
+                                <a class="link contacts__contacts-color" href="tel+380961111111">
+                                    +38 096 111 11 11
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </address>
+            </div>
+
+            <div class="footer-flex__footer-contacts">
+                <h3 class="footer-title"> Присоединяйтесь </h3>
+                <ul class="list footer-icons">
+                    <li class="footer-icons__fotter-icon-blok">
+                        <a href="" class="footer-icons__link card-icons" target="_blank" rel="noopener noreferrer"><svg
+                                class="footer-icons__icon icon">
+                                <use href="./images/sprite.svg#icon-instagram"></use>
+                            </svg>
                         </a>
                     </li>
-                    <li class="footer-flex__margin-footer">
-                        <a class="link contacts__contacts-color" href="tel+380961111111">+38 096 111 11 11
-
+                    <li class="footer-icons__fotter-icon-blok">
+                        <a href="" class="footer-icons__link card-icons" target="_blank" rel="noopener noreferrer"><svg
+                                class="footer-icons__icon icon">
+                                <use href="./images/sprite.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer-icons__fotter-icon-blok">
+                        <a href="" class="footer-icons__link card-icons" target="_blank" rel="noopener noreferrer"><svg
+                                class="footer-icons__icon icon">
+                                <use href="./images/sprite.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer-icons__fotter-icon-blok">
+                        <a href="" class="footer-icons__link card-icons" target="_blank" rel="noopener noreferrer"><svg
+                                class="footer-icons__icon icon">
+                                <use href="./images/sprite.svg#icon-linkedin"></use>
+                            </svg>
                         </a>
                     </li>
                 </ul>
-                </div>
-            </address>
-        </div>
-        <div class="footer-flex__footer-contacts">
-            <h3 class="footer-title"> Присоединяйтесь </h3>
-            <ul class="list footer-icons">
-                <li class="footer-icons__fotter-icon-blok">
-                    <a href="" class="footer-icons__link card-icons" target="_blank" rel="noopener noreferrer"><svg
-                            class="footer-icons__icon icon">
-                            <use href="./images/sprite.svg#icon-instagram"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="footer-icons__fotter-icon-blok">
-                    <a href="" class="footer-icons__link card-icons" target="_blank" rel="noopener noreferrer"><svg
-                            class="footer-icons__icon icon">
-                            <use href="./images/sprite.svg#icon-twitter"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="footer-icons__fotter-icon-blok">
-                    <a href="" class="footer-icons__link card-icons" target="_blank" rel="noopener noreferrer"><svg
-                            class="footer-icons__icon icon">
-                            <use href="./images/sprite.svg#icon-facebook"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="footer-icons__fotter-icon-blok">
-                    <a href="" class="footer-icons__link card-icons" target="_blank" rel="noopener noreferrer"><svg
-                            class="footer-icons__icon icon">
-                            <use href="./images/sprite.svg#icon-linkedin"></use>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div class="form-blok">
+            </div>
+        </div>        <div class="form-blok">
             <h3 class="form-blok__footer-title footer-title"> Подпишитесь на рассылку </h3>
             <form class="form-footer">
                 <input class="form-footer__form-label form-footer__input-footer" type="email" name="email"
@@ -282,5 +423,6 @@
         </div>
     </div>
 </footer>
+<script src="./js/menu.js"></script>
 </body>
 </html>

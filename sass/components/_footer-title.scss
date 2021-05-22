@@ -4,4 +4,8 @@
   text-transform: uppercase;
   color: var(--bg-portfo);
   margin-bottom: 20px;
+
+  @media screen and (max-width: 1199.98px) {
+    text-align: center;
+  }
 }

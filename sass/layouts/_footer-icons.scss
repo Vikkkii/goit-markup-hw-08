@@ -36,3 +36,14 @@
 .footer-icons__link:focus .icon {
   fill: var(--bg-portfo);
 }
+
+.footer-icons {
+  display: flex;
+  justify-content: left;
+}
+
+@media screen and (max-width: 1199.98px) {
+  .footer-icons {
+    justify-content: center;
+  }
+}
