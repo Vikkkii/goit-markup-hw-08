@@ -378,6 +378,9 @@ img {
   height: 40px;
   background-color: transparent;
   border: none;
+  transition-property: fill;
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media screen and (min-width: 768px) {
@@ -403,9 +406,9 @@ img {
   height: 40px;
 }
 
-.mobile-menu-icon:hover .mobile-menu-btn,
-.mobile-menu-icon:focus .mobile-menu-btn {
-  color: var(--accent-color);
+.mobile-menu-icon:hover,
+.mobile-menu-icon:focus {
+  fill: var(--accent-color);
 }
 
 .mobile-menu {
@@ -955,8 +958,7 @@ img {
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/mobile/header-img_mobile.jpg);
   background-repeat: no-repeat;
   max-width: 1600px;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  height: 600px;
   margin-left: auto;
   margin-right: auto;
   background-size: cover;
@@ -1439,7 +1441,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .flex__element {
-    flex-basis: calc((100% - 30px * 9) / 9);
+    flex-basis: calc((100% - 30px * 3) / 3);
   }
 }
 
