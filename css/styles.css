@@ -406,8 +406,8 @@ img {
   height: 40px;
 }
 
-.mobile-menu-icon:hover,
-.mobile-menu-icon:focus {
+.mobile-menu-btn:hover .mobile-menu-icon,
+.mobile-menu-btn:focus .mobile-menu-icon {
   fill: var(--accent-color);
 }
 
