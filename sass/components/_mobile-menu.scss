@@ -5,6 +5,7 @@
   height: 40px;
   background-color: transparent;
   border: none;
+
   transition-property: fill;
   transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -19,14 +20,14 @@
   }
 }
 
-.mobile-menu-btn {
-  &:hover,
-  &:focus {
-    .mobile-menu-icon {
-      fill: var(--accent-color);
-    }
-  }
-}
+// .mobile-menu-btn {
+//   &:hover,
+//   &:focus {
+//     .mobile-menu-icon {
+//       fill: var(--accent-color);
+//     }
+//   }
+// }
 
 .icon-close {
   display: none;
@@ -45,10 +46,10 @@
   width: 40px;
   height: 40px;
 
-  // .mobile-menu-btn:hover &,
-  // .mobile-menu-btn:focus & {
-  //   fill: var(--accent-color);
-  // }
+  .mobile-menu-btn:hover &,
+  .mobile-menu-btn:focus & {
+    fill: var(--accent-color);
+  }
 }
 
 .mobile-menu {

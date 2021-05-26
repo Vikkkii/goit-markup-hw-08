@@ -389,10 +389,6 @@ img {
   }
 }
 
-.mobile-menu-btn:hover .mobile-menu-icon, .mobile-menu-btn:focus .mobile-menu-icon {
-  fill: var(--accent-color);
-}
-
 .icon-close {
   display: none;
 }
@@ -408,6 +404,11 @@ img {
 .mobile-menu-icon {
   width: 40px;
   height: 40px;
+}
+
+.mobile-menu-btn:hover .mobile-menu-icon,
+.mobile-menu-btn:focus .mobile-menu-icon {
+  fill: var(--accent-color);
 }
 
 .mobile-menu {
