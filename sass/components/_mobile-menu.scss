@@ -9,6 +9,11 @@
   transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+  &:hover .mobile-menu-icon,
+  &:focus .mobile-menu-icon {
+    fill: var(--accent-color);
+  }
+
   @media screen and (min-width: 768px) {
     display: none;
   }
@@ -31,10 +36,10 @@
   width: 40px;
   height: 40px;
 
-  .mobile-menu-btn:hover &,
-  .mobile-menu-btn:focus & {
-    fill: var(--accent-color);
-  }
+  // .mobile-menu-btn:hover &,
+  // .mobile-menu-btn:focus & {
+  //   fill: var(--accent-color);
+  // }
 }
 
 .mobile-menu {
