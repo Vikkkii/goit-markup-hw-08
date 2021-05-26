@@ -383,15 +383,14 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.mobile-menu-btn:hover .mobile-menu-icon,
-.mobile-menu-btn:focus .mobile-menu-icon {
-  fill: var(--accent-color);
-}
-
 @media screen and (min-width: 768px) {
   .mobile-menu-btn {
     display: none;
   }
+}
+
+.mobile-menu-btn:hover .mobile-menu-icon, .mobile-menu-btn:focus .mobile-menu-icon {
+  fill: var(--accent-color);
 }
 
 .icon-close {
