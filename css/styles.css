@@ -512,12 +512,19 @@ img {
 }
 
 .title-label {
+  font-size: 14px;
   padding-top: 0;
   margin-bottom: 10px;
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--title-color);
+}
+
+@media screen and (max-width: 767.9px) {
+  .title-label {
+    text-align: center;
+  }
 }
 
 .hide-title {
@@ -581,6 +588,7 @@ img {
 }
 
 .footer-title {
+  font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
@@ -643,9 +651,10 @@ img {
 }
 
 .form-footer__input-footer {
-  width: 358px;
+  width: 350px;
   height: 50px;
   padding: 15px;
+  margin-right: 10px;
   cursor: pointer;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
@@ -851,6 +860,16 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 480px) {
+  .modal {
+    position: absolute;
+    max-width: 450px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
 @media screen and (max-width: 1199.98px) {
   .modal {
     width: 89vw;
@@ -964,6 +983,12 @@ img {
   background-position: center;
 }
 
+@media screen and (min-width: 480px) and (max-width: 1199.98px) {
+  .hero {
+    height: 400px;
+  }
+}
+
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/mobile/header@2x-img_mobile.jpg");
@@ -1043,12 +1068,18 @@ img {
 }
 
 .section-padding__section-title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.16;
   text-align: center;
   color: var(--title-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .section-padding__section-title {
+    font-size: 36px;
+  }
 }
 
 @media screen and (max-width: 1199.98px) {
@@ -1187,11 +1218,16 @@ img {
 
 .our-clients__clients-title {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.167;
   text-align: center;
-  margin-bottom: 50px;
   color: var(--title-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .our-clients__clients-title {
+    font-size: 36px;
+  }
 }
 
 .clients {
@@ -1250,8 +1286,8 @@ img {
 }
 
 .footer {
-  padding-top: 60px;
   padding-bottom: 60px;
+  padding-top: 60px;
 }
 
 .footer-flex {
@@ -1265,14 +1301,17 @@ img {
   }
 }
 
-.contact-us {
-  margin-bottom: 60px;
+@media screen and (max-width: 480px) {
+  .contact-us {
+    margin-bottom: 60px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .contact-us {
     display: flex;
     justify-content: space-around;
+    margin-bottom: 0;
   }
 }
 
